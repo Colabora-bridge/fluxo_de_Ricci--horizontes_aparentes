@@ -1,0 +1,33 @@
+\documentclass{article}
+
+% set font encoding for PDFLaTeX or XeLaTeX
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+% package which allows TeX pictures or other TeX code to be compiled standalone or as part of a main document - see: https://www.ctan.org/pkg/standalone
+\usepackage{standalone}
+
+% used in maketitle
+\title{Fluxo de Ricci e Horizontes Aparentes}
+%Em ordem alfabética do último sobrenome
+\author{Alexandre "asm" de Sousa, Vanderson Lima, Diego Sousa}
+\date{}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% documentation: http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+\maketitle
+
+\input{./variacao--vinculos/variacao--vinculos.tex}
+\input{./variacao--expansao_tipo-luz/variacao--expansao_tipo-luz.tex}
+\input{./variacao--quantidade_complementar--massa/variacao--quantidade_complementar--massa.tex}
+
+\end{document}
